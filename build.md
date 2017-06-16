@@ -16,3 +16,12 @@
 * N Buchse
 * 40cm Kupferdraht
 * 4 3mm Schrauben + Muttern
+* Schrumpfschlauch
+* Montagekleber
+## Werkzeugliste
+* Stufenbohrer
+* Lötkolben
+* Zange
+* Seitenschneider
+* Abisolierzange (optional)
+* PH2 Schraubendreher
