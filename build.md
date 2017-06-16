@@ -25,3 +25,5 @@
 * Seitenschneider
 * Abisolierzange (optional)
 * PH2 Schraubendreher
+* Multimeter
+* feiner Schlitzschraubendreher
