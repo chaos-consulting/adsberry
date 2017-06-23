@@ -18,6 +18,7 @@ sudo apt-get install iftop htop xinetd gdebi-core build-essential git cmake pkg-
 ## Libuecc kompilieren
 ```
 git clone http://git.universe-factory.net/libuecc
+cd libuecc
 cmake ./
 make
 sudo make install
@@ -58,6 +59,10 @@ sudo nano secret.conf
 ```
 
 ```
+secret "xxxxxxxx.....";
+```
+
+```
 sudo mkdir peers
 cd peers
 ```
@@ -65,9 +70,35 @@ cd peers
 ```
 sudo nano adsb.chaos-consulting.de
 ```
+
+```
+key "zzzzzzzzzzzz.......";
+remote "adsb.chaos-consulting.de" port 10000;
+```
+
 ```
 cd..
 sudo nano fastd.conf
+```
+
+```
+include "secret.conf";
+include peers from "peers";
+interface "tap0";
+log level info;
+mode tap;
+method "salsa2012+umac";
+mtu 1000;
+secure handshakes yes;
+#status socket "/tmp/fastd_server.sock";
+log to syslog level verbose;
+
+on up "
+ ip link set address xx:xx:xx:xx:xx:xx dev tap0
+  ip link set up $INTERFACE
+	ip address add 192.168.173.i dev tap0
+	ip route add 192.168.173.0/24 dev tap0
+";
 ```
 
 ```
