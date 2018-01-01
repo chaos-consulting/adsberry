@@ -1,0 +1,9 @@
+[Unit]
+Description=adsb
+
+[Service]
+ExecStart=/opt/adsb/adsb.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
