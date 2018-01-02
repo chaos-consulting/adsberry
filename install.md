@@ -33,4 +33,7 @@ Request a Stationname
 ...
 Set up a system service
 ...
-
+systemctl daemon-reload
+systemctl start adsb.service 
+systemctl status adsb.service 
+systemctl enable adsb.service 
