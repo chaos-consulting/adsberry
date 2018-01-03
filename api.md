@@ -28,3 +28,4 @@ systemctl start adsb.service
 systemctl status adsb.service 
 systemctl enable adsb.service 
 ```
+* Thats it!
