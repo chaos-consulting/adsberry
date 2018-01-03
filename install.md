@@ -34,7 +34,15 @@ sudo gdebi dump1090-mutability_1.15~dev_armhf.deb
 ```
 
 ## Configure dump1090
-/usr/share/dump1090-mutability/html/config.js
+
+```
+sudo nano /etc/default/dump1090-mutability
+```
+* Set your receiver location
+```
+LAT=""
+LON=""
+```
 
 ## Start dump1090
 sudo service dump1090-mutability start
