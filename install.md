@@ -26,10 +26,12 @@ sudo apt-get install build-essential git cmake pkg-config bison libjson0 libjson
 * Reboot the Pi and connect via ssh again
 
 ## Compile and install our fork of dump1090
+```
 git clone https://github.com/chaos-consulting/dump1090.git
 cd dump1090
 dpkg-buildpackage -b
 sudo gdebi dump1090-mutability_1.15~dev_armhf.deb
+```
 
 ## Configure dump1090
 /usr/share/dump1090-mutability/html/config.js
