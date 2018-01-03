@@ -12,6 +12,8 @@ mkdir adsb
 cd adsb
 sudo nano adsb.sh
 ```
+* Do not forget to put in your username and password we gave to you for using the api
+
 
 * Make the file executable
 
