@@ -1,25 +1,31 @@
-# Installationsanleitung
+# Installation manual
 This how-to is still work in progess
 
-## Raspian Jessie Lite installieren
-* das Image von http://raspberrypi.org herunterladen
-* .zip entpacken
-* Image mit dd auf die SD Karte schreiben
-  ```
+## Install Raspian Jessie Lite
+* Download the Image from http://raspberrypi.org
+* extract the zip archive
+* Write the image to the sd card with dd or look for other ways on the official Raspberry site
+
+```
   sudo dd bs=4M if=~/meinimage.img of=/dev/mmcblk0
-  ```
-* SSH aktivieren
-* Booten
+```
+
+* SSH activate SSH in the config file on the sd card
+
+* Put the card into the Pi and boot it up
+* Connect via ssh and change the password for security reasons first
+* Install software updates and th needed software packages
+
 ```
 sudo apt-get update
 sudo apt-get dist-upgrade
 sudo apt-get autoremove
-sudo apt-get install iftop htop xinetd gdebi-core build-essential git cmake pkg-config bison libjson0 libjson0-dev doxygen libcap-dev debhelper librtlsdr-dev libusb-1.0-0-dev debhelper librtlsdr-dev
+sudo apt-get install build-essential git cmake pkg-config bison libjson0 libjson0-dev doxygen libcap-dev debhelper librtlsdr-dev libusb-1.0-0-dev debhelper librtlsdr-dev
 ```
 
-reboot
+* Reboot the Pi and connect via ssh again
 
-## dump1090 Kompilieren
+## Compile and install our fork of dump1090
 git clone https://github.com/chaos-consulting/dump1090.git
 cd dump1090
 dpkg-buildpackage -b
@@ -28,12 +34,20 @@ sudo gdebi dump1090-mutability_1.15~dev_armhf.deb
 ## Configure dump1090
 /usr/share/dump1090-mutability/html/config.js
 
-## Connecting to the Chaos adsb API
-Request a Stationname
-...
-Set up a system service
-...
-systemctl daemon-reload
-systemctl start adsb.service 
-systemctl status adsb.service 
-systemctl enable adsb.service 
+## Start dump1090
+sudo service dump1090-mutability start
+
+## Check the output
+* Check the number of planes you receive
+
+```
+cat /run/dump1090-mutability/aircraft.json|grep -c hex
+```
+
+## Install a webserver
+* This step is only needed if you want to access your Pi's map locally, it is not needed to feed to the big map on https://adsb.chaos-consulting.de
+* Install Lighttpd
+* this is TO DO
+
+## Feed the data
+* read on in our api doc api.md
