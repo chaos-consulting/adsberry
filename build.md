@@ -1,29 +1,71 @@
 # Bauanleitung - How to Build an ADS-Berry Pi
-## Teileliste
-* Raspberry Pi B, B+, 2 oder 3
-* (Micro) SD Speicherkarte 4GB oder mehr
+## Parts List
+* Raspberry Pi B, B+ (versions 2 and 3 do work, but are known to instability in our setup because of higher power usage)
+* (Micro) SD memory Card with at least 4GB
 * Buck Boost Converter
 * Passive PoE Splitter
-* 30cm USB Verlängerung
-* Micro USB Kabel
-* DVB-T Stick 820T
-* Gehäuse
-* MCX -> SMA Adapter
+* 30cm USB extension
+* Micro USB cord
+* rtl-sdr DVB-T dongle with 820T or 820T2 Tuner. Nowerdays it is likely that you get a Fitipower tuner, that ist unfortunately not workink for ADS-B
+* A Case which is Water Proof
+* MCX -> SMA adapter
 * 1090MHz Bandpassfilter
-* Kabeldurchführung
-* RJ45 Durchführung
-* 1m SMA -> N Kabel
-* N Buchse
-* 40cm Kupferdraht
-* 4 3mm Schrauben + Muttern
-* Schrumpfschlauch
-* Montagekleber
-## Werkzeugliste
-* Stufenbohrer
-* Lötkolben
-* Zange
-* Seitenschneider
-* Abisolierzange (optional)
-* PH2 Schraubendreher
+* M16 wire grommit
+* RJ45 grommit
+* 1m SMA -> N RG58 cable
+* N socket
+* 40cm copper wire
+* 4 M3 bolts and nuts
+* Shrinktube
+* Construction adhesive
+* 24V Passive PoE power supply
+
+## Tools
+* Drill for the big holes for the grommits
+* Soldering iron + solder
+* Pliers
+* Wirecutter
+* PH2 Screwdriver or long Bit
 * Multimeter
-* feiner Schlitzschraubendreher
+* small - screwdriver
+
+## Prepare the box
+* Open the box and drill two holes in in one of the small sides, witch enough space around to install both grommits
+* This side will be our bottom
+* Install the grommits
+
+## Prepare the power
+* Cut the barrel connector of the PoE splitter and expose the two wires of the splitter
+* Solder the positive one (usually red) to the positive input terminal (+) of the Buck/Boost converter
+* Solder the negative one (usually black) to the negative input terminal (-) of the convrter
+* Connect the 24V PoE power source via an ethernet cable to the splitter
+* Measure the output voltage of the converter with the multimeter set to DC Voltage
+* Turn the potentiometer on the converter with a small slotted screwdriver until output ist 5V
+* Disconnect the power source
+* Cut the micro USB cord to leave about 20cm on the micro connectors side and expose the four wires.
+* Cut the data lines D+ and D- usually green and white
+* Solder the positive (usually red) and negative (usually black) wires to the positive (+) and negative (-) output terminals of the converter
+
+## Put it all in the box
+* Put raspberry in the box
+* Connect micro USB for Regualator with 5V in of the Pi
+* Connect input of PoE splitter to RJ45 Grommit from the inside
+* Connect RJ45 output of the splitter to the Pi
+* Connect the rtl-sdr dongle via the usb extension cable to the Pi
+* Connect the bandpassfilter via the MCX adapter to the rtl-sdr dongle
+* Feed the SMA to N cable with the SMA connector from the outside into the cable grommit in the bottom of the case and connect it to the output of the bandpassfilter
+* Thighten up the grommit
+* If you like you can secure the parts inside with a bit of construction adhesive but leave enough room to access the memory card slot anytime
+
+## Close the box
+* If you inserted your prepared memory card you can secure the boxes lid with the four screws and mount it on a plays with clear line of sight for the antenna.
+* You can feed data and power via a good quality RJ45 cat6e cable from up to 30m
+* Connect the box to the passive PoE output of your injector or switch and connect the injector to your network
+
+## Build the antenna
+* cut 4 about 8cm long copper pieces and create a loop on each end which is big enoug for a M3 screw
+* solder the loops end for mor stability
+* cut one 8cm long copper pice and solder it into the antenna jacks middle pin
+* screw the four pieces withe the loops to the antenna at an 45° angle and bend them down 45°
+* Cut each of the 5 copper pieces to exactly 68mm
+* Connect the antenna and install it in an upright position with clear line of sight
