@@ -8,7 +8,7 @@
 
 ```
 cd /opt
-mkdir adsb
+sudo mkdir adsb
 cd adsb
 sudo nano adsb.sh
 ```
