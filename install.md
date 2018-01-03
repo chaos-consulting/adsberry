@@ -20,7 +20,7 @@ This how-to is still work in progess
 sudo apt-get update
 sudo apt-get dist-upgrade
 sudo apt-get autoremove
-sudo apt-get install build-essential git cmake pkg-config bison libjson0 libjson0-dev doxygen libcap-dev debhelper librtlsdr-dev libusb-1.0-0-dev debhelper librtlsdr-dev
+sudo apt-get install build-essential git cmake pkg-config bison libjson-c3 libjson-c-dev doxygen libcap-dev debhelper librtlsdr-dev libusb-1.0-0-dev debhelper librtlsdr-dev
 ```
 
 * Reboot the Pi and connect via ssh again
