@@ -4,7 +4,7 @@
 
 ## Connecting to the Chaos adsb API
 * Request a Stationname and password by sending an email to us: info@chaos-consulting.de
-* Place the adsb.sh file from our 'scripts' directory in a folder on your Pi. To keep it clean and tidy we create the folder adsb in /opt and place the file there.
+* Place the adsb.sh file from our 'scripts' directory (https://github.com/chaos-consulting/adsberry) in a folder on your Pi. To keep it clean and tidy we create the folder adsb in /opt and place the file there.
 
 ```
 cd /opt
