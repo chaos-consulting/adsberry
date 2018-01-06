@@ -30,6 +30,7 @@ sudo apt-get install build-essential git cmake pkg-config bison libjson-c3 libjs
 git clone https://github.com/chaos-consulting/dump1090.git
 cd dump1090
 dpkg-buildpackage -b
+cd ..
 sudo gdebi dump1090-mutability_1.15~dev_armhf.deb
 ```
 
