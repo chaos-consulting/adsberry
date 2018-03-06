@@ -21,6 +21,7 @@ sudo nano adsb.sh
 sudo chmod +x adsb.sh
 ```
 * As we do not want to execute the file manually we create a system servie, that is startet if the system boots and restartet if it crashes. Therefore we put the adsb.service file from our 'scripts' directory into /etc/systemd/system, reload the systemctl daemon, start the service,  check the status and set it to autostart
+* If you are running a different version of dump1090 you may need to change the path to your aircraft.json file in the adsb.sh script
 
 ```
 sudo systemctl daemon-reload
