@@ -6,7 +6,7 @@
 * Passive PoE Splitter
 * 30cm USB extension
 * Micro USB cord
-* rtl-sdr DVB-T dongle with 820T or 820T2 Tuner. Nowerdays it is likely that you get a Fitipower tuner, that ist unfortunately not workink for ADS-B
+* rtl-sdr DVB-T dongle with 820T or 820T2 Tuner. Nowerdays it is likely that you get a Fitipower tuner, that ist unfortunately not working for ADS-B
 * A Case which is Water Proof
 * MCX -> SMA adapter
 * 1090MHz Bandpassfilter
