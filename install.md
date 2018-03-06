@@ -31,7 +31,7 @@ git clone https://github.com/chaos-consulting/dump1090.git
 cd dump1090
 dpkg-buildpackage -b
 cd ..
-sudo gdebi dump1090-mutability_1.15~dev_armhf.deb
+sudo dpkg -i dump1090-mutability_1.15~dev_armhf.deb
 ```
 
 ## Configure dump1090
