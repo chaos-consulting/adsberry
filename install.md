@@ -1,7 +1,7 @@
 # Installation manual
 This how-to is still work in progess
 
-## Install Raspian Jessie Lite
+## Install Raspian Buster Lite
 * Download the Image from http://raspberrypi.org
 * extract the zip archive
 * Write the image to the sd card with dd or look for other ways on the official Raspberry site
@@ -10,7 +10,7 @@ This how-to is still work in progess
   sudo dd bs=4M if=~/meinimage.img of=/dev/mmcblk0
 ```
 
-* SSH activate SSH in the config file on the sd card
+* On the SD Cards /boot touch a ssh file
 
 * Put the card into the Pi and boot it up
 * Connect via ssh and change the password for security reasons first
@@ -20,19 +20,10 @@ This how-to is still work in progess
 sudo apt-get update
 sudo apt-get dist-upgrade
 sudo apt-get autoremove
-sudo apt-get install build-essential git cmake pkg-config bison libjson-c3 libjson-c-dev doxygen libcap-dev debhelper librtlsdr-dev libusb-1.0-0-dev debhelper librtlsdr-dev
+sudo apt-get install dump1090-mutability
 ```
 
 * Reboot the Pi and connect via ssh again
-
-## Compile and install our fork of dump1090
-```
-git clone https://github.com/chaos-consulting/dump1090.git
-cd dump1090
-dpkg-buildpackage -b
-cd ..
-sudo dpkg -i dump1090-mutability_1.15~dev_armhf.deb
-```
 
 ## Configure dump1090
 
