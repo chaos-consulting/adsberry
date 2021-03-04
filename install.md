@@ -10,7 +10,10 @@ This how-to is still work in progess
   sudo dd bs=4M if=~/meinimage.img of=/dev/mmcblk0
 ```
 
-* On the SD Cards /boot touch a ssh file
+* On the SD Cards /boot Pratition create a file to activate ssh
+```
+touch ssh
+```
 
 * Put the card into the Pi and boot it up
 * Connect via ssh and change the password for security reasons first
