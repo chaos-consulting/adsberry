@@ -71,4 +71,4 @@
 * Connect the antenna and install it in an upright position with clear line of sight
 
 ## Next steps
-* As you are done with the hardware side of the build  lets look into the software side https://github.com/chaos-consulting/adsberry/blob/master/install.md
+* [As you are done with the hardware side of the build  lets look into the software side](install.md)
