@@ -69,3 +69,6 @@
 * screw the four pieces withe the loops to the antenna at an 45° angle and bend them down 45°
 * Cut each of the 5 copper pieces to exactly 68mm
 * Connect the antenna and install it in an upright position with clear line of sight
+
+# Next steps
+* As you are done with the hardware side of the build  lets look into the software side https://github.com/chaos-consulting/adsberry/blob/master/install.md
