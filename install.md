@@ -1,10 +1,19 @@
 # Installation manual
-This how-to is still work in progess
 
 ## Install Raspian Buster Lite
 * Download the Image from http://raspberrypi.org
+* Be sure to use the lite image, you du not want a fully fledged desktop environment eating up your PIs CPU power
 * extract the zip archive
 * Write the image to the sd card with dd or look for other ways on the official Raspberry site
+* Look for the name of your SD Card via lsbls
+
+```
+lsblk
+NAME           MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+mmcblk0        179:0    0  29,7G  0 disk  
+└─mmcblk0p1    179:1    0  29,7G  0 part  /media/user/DingeTM
+```
+The SD Card ist mmcblk0
 
 ```
   sudo dd bs=4M if=~/meinimage.img of=/dev/mmcblk0
@@ -17,7 +26,8 @@ touch ssh
 
 * Put the card into the Pi and boot it up
 * Connect via ssh and change the password for security reasons first
-* Install software updates and th needed software packages
+* If you connect your PI to a public Network like Freifunk you should use public/private key auth and disable Password auth
+* Install software updates and teh needed software packages
 
 ```
 sudo apt-get update
@@ -40,7 +50,9 @@ LON=""
 ```
 
 ## Start dump1090
+```
 sudo service dump1090-mutability start
+```
 
 ## Check the output
 * Check the number of planes you receive
@@ -81,11 +93,5 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="2838",  MODE="0666
 * Dont forget to change the vendor and product id to the ones matching your sdr dongle
 * now reboot and check again if you see a number of Planes and if not check the logfile again
 
-
-## Install a webserver
-* This step is only needed if you want to access your Pi's map locally, it is not needed to feed to the big map on https://adsb.chaos-consulting.de
-* Install Lighttpd
-* this is TO DO
-
 ## Feed the data
-* read on in our api doc api.md
+* read on in our api doc api.md https://github.com/chaos-consulting/adsberry/blob/master/api.md
