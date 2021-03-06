@@ -1,10 +1,10 @@
 # ADS-B mit dem Raspberry Pi - Chaosconsulting Style
 
 Diese Anleitung ist aufgeteilt in vier Abschnitte:
-* build.md - Eine Bauanleitung, die den Zusammenbau der benötigten Hardware erklärt
-* install.md - Eine Installationsanleitung für das Betriebssystem und Dump1090 sowie die Einrichtung eines Webservers um die Flugzeuge lokal beobachten zu können.
-* api.md - Eine Erklärung wie man die Daten nun in die große Karte https://adsb.chaos-consulting.de einspeisen kann, dis sollte mit jedem Dump1090 Setup und eventuellen Forks davon funktionieren.
-* mlat.md - Mit MLAT lassen sich die Positionen von Flugzeugen bestimmen, die selbst keine Positionsdaten aussenden
+* [build.md](build.md) - Eine Bauanleitung, die den Zusammenbau der benötigten Hardware erklärt
+* [install.md](install.md) - Eine Installationsanleitung für das Betriebssystem und Dump1090 sowie die Einrichtung eines Webservers um die Flugzeuge lokal beobachten zu können.
+* [api.md](api.md) - Eine Erklärung wie man die Daten nun in die große Karte https://adsb.chaos-consulting.de einspeisen kann, dis sollte mit jedem Dump1090 Setup und eventuellen Forks davon funktionieren.
+* [mlat.md](mlat.md) - Mit MLAT lassen sich die Positionen von Flugzeugen bestimmen, die selbst keine Positionsdaten aussenden
 
 Vorraussetzung sind Linux Grundkenntnisse, ein Linux Computer mit SD Kartenleser und Lötkenntnisse.
 
