@@ -44,6 +44,7 @@ sudo apt-get install dump1090-mutability
 sudo nano /etc/default/dump1090-mutability
 ```
 * Set your receiver location
+* To determine the position do not use your mobile phones GPS functionality it can be quite unreliable, instead use a service like openstreetmap.org where you can right click on the map to show the adrees and coordinates
 ```
 LAT="51.xxxx"
 LON="7.yyyyy"
