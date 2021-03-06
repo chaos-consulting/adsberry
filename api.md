@@ -10,6 +10,7 @@
 cd /opt
 sudo mkdir adsb
 cd adsb
+sudo wget https://raw.githubusercontent.com/chaos-consulting/adsberry/master/scripts/adsb.sh
 sudo nano adsb.sh
 ```
 * Do not forget to put in your username and password we gave to you for using the api
@@ -24,9 +25,13 @@ sudo chmod +x adsb.sh
 * If you are running a different version of dump1090 you may need to change the path to your aircraft.json file in the adsb.sh script
 
 ```
+sudo wget -O /etc/systemd/system/adsb.service https://raw.githubusercontent.com/chaos-consulting/adsberry/master/scripts/adsb.service
 sudo systemctl daemon-reload
 sudo systemctl start adsb.service 
 sudo systemctl status adsb.service 
 sudo systemctl enable adsb.service 
 ```
 * Thats it!
+
+## Take it a step further
+* [If you want more, you can add MLAT to your Setup to see the positions of Planes that do not send position info](mlat.md)
