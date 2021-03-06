@@ -95,4 +95,4 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="2838",  MODE="0666
 * now reboot and check again if you see a number of Planes and if not check the logfile again
 
 ## Feed the data
-* read on in our api doc api.md https://github.com/chaos-consulting/adsberry/blob/master/api.md
+* [read on in our api doc api.md](api.md)
