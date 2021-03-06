@@ -45,8 +45,8 @@ sudo nano /etc/default/dump1090-mutability
 ```
 * Set your receiver location
 ```
-LAT=""
-LON=""
+LAT="51.xxxx"
+LON="7.yyyyy"
 ```
 
 ## Start dump1090
