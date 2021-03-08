@@ -7,8 +7,8 @@
 
 ```
 sudo apt install stunnel4
-wget https://github.com/chaos-consulting/mlat-client/releases/download/v0.3.2-1/mlat-client_0.3.2-1_armhf.deb
-dpkg -i https://github.com/chaos-consulting/mlat-client
+wget https://github.com/chaos-consulting/mlat-client/releases/download/v0.3.2-2/mlat-client-c2is_0.3.2-2_armhf.deb
+dpkg -i mlat-client-c2is_0.3.2-2_armhf.deb
 ```
 
 ## Configure the mlat-client package
