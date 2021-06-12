@@ -1,0 +1,28 @@
+# installiere und konfiguriere ADS-B Empfänger
+adsb_install: no
+
+
+adsb_install_dump1090: yes
+
+# Koordinaten
+adsb_lat: "51.0000"
+adsb_lon: "7.0000"
+
+# USB Dongle Kennung
+# lsusb
+# Bus 001 Device 004: ID 0bda:2838 Realtek Semiconductor Corp. RTL2838 DVB-T
+adsb_usb_vendorid: "0bda"
+adsb_usb_productid: "2838"
+
+adsb_install_udevrule: no
+
+adsb_feed_data_to_chaosconsulting: no
+
+adsb_api_username: "username"
+adsb_api_password: "password"
+
+adsb_install_mlat: no
+
+# raspberry pi deb. You can find the amd64 version here:
+# https://github.com/chaos-consulting/mlat-client/releases
+adsb_mlat_deb_url: "https://github.com/chaos-consulting/mlat-client/releases/download/v0.3.2-2/mlat-client-c2is_0.3.2-2_armhf.deb"

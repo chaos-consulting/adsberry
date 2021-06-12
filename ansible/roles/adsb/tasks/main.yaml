@@ -1,0 +1,14 @@
+- name: ADS-B Role
+  block:
+    - name: dump1090 install and config
+      include_tasks: dump1090.yaml
+
+    - name: Feed aircraft data to the adsb.chaos-consulting.de api
+      include_tasks: api.yaml
+      when: adsb_feed_data_to_chaosconsulting
+
+    - name: install and configure mlat
+      include_tasks: mlat.yaml
+      when: adsb_install_mlat
+
+  when: adsb_install
