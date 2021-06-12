@@ -2,11 +2,12 @@
 
 Ein paar Halter und Ständer die man mit seinem 3D-Drucker selber ausdrucken kann.
 
+Mehr Bilder im Unterordner [images](images)
 
-## Antenna mast bracket
+## Antennenmast Halter
 
 Ich habe es in PLA ausgedruckt, es sollte aber besser in einem Filament gedruckt werden, welches UV beständiger ist.
-Auf der einen Seite kann man den N-Stecker einklipsen und die andere Seite auf dem Antennenmast stecken.
+Auf der einen Seite kann man den N-Stecker einklipsen und die andere Seite auf dem Antennenmast (38mm Durchmesser) stecken.
 
 ![Antenna mast bracket 3D](images/Antenna-mast-bracket.png)
 
@@ -16,7 +17,7 @@ Auf der einen Seite kann man den N-Stecker einklipsen und die andere Seite auf d
 ![Antenna mast bracket](images/IMG_20210603_150820.jpg)
 
 
-## Filter stand
+## Filter Ständer
 
 Ein Ständer um den Filter in einem Gehäuse fest zu montieren. Designt ist er für den FlightAware Bandpass Filter.
 
@@ -28,7 +29,7 @@ Ein Ständer um den Filter in einem Gehäuse fest zu montieren. Designt ist er f
 ![Filter stand](images/IMG_20210603_151129.jpg)
 
 
-## USB Stick stand
+## USB Stick Ständer
 
 Ein Ständer für einen DVB-T USB-Stick, wenn er maximal 27mm breit und 13mm hoch ist, dann sollte der Ständer passen. Ansonsten kann man in der FreeCAD Projektdatei sich den Halter auch anpassen.
 
@@ -40,4 +41,4 @@ Ein Ständer für einen DVB-T USB-Stick, wenn er maximal 27mm breit und 13mm hoc
 ![USB Stick stand](images/IMG_20210611_220708.jpg)
 
 
-Mehr Bilder im Unterordner **[images](images)**
+Mehr Bilder im Unterordner [images](images)
