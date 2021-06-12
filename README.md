@@ -5,7 +5,7 @@ Diese Anleitung ist aufgeteilt in vier Abschnitte:
 * [install.md](install.md) - Eine Installationsanleitung für das Betriebssystem und Dump1090 sowie die Einrichtung eines Webservers um die Flugzeuge lokal beobachten zu können.
 * [api.md](api.md) - Eine Erklärung wie man die Daten nun in die große Karte https://adsb.chaos-consulting.de einspeisen kann, dis sollte mit jedem Dump1090 Setup und eventuellen Forks davon funktionieren.
 * [mlat.md](mlat.md) - Mit MLAT lassen sich die Positionen von Flugzeugen bestimmen, die selbst keine Positionsdaten aussenden
-* [3dfiles/](3dfiles/README.md) - Halter und Ständer zum selber ausdrucken
+* [3dfiles/README.md](3dfiles/) - Halter und Ständer zum selber ausdrucken
 
 Vorraussetzung sind Linux Grundkenntnisse, ein Linux Computer mit SD Kartenleser und Lötkenntnisse.
 
