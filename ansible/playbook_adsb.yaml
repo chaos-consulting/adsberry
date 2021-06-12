@@ -1,0 +1,6 @@
+
+
+- hosts: all
+  roles:
+    # ADS-B Role
+    - { role: adsb, tags: adsb }

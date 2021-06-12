@@ -1,0 +1,41 @@
+- name: Update Cache if older than 1h
+  ansible.builtin.apt:
+    update_cache: yes
+    cache_valid_time: 3600
+  become: yes
+
+- name: install dump1090
+  ansible.builtin.apt:
+    name: "dump1090-mutability"
+    install_recommends: no
+    state: present
+  when: adsb_install_dump1090
+  become: yes
+
+- name: fix the device permissions by installing the udev rules file rtl-sdr.rules
+  ansible.builtin.template:
+    src: rtl-sdr.rules.j2
+    dest:  /etc/udev/rules.d/rtl-sdr.rules
+    owner: root
+    group: root
+    mode: 0644
+  notify: Reload udev rules
+  become: yes
+  when: adsb_install_udevrule
+
+
+- name: set position LAT in /etc/default/dump1090-mutability
+  ansible.builtin.lineinfile:
+    path: /etc/default/dump1090-mutability
+    regexp: 'LAT="'
+    line: "LAT=\"{{ adsb_lat }}\""
+  notify: "restart dump1090"
+  become: yes
+
+- name: set position LON in /etc/default/dump1090-mutability
+  ansible.builtin.lineinfile:
+    path: /etc/default/dump1090-mutability
+    regexp: 'LON="'
+    line: "LON=\"{{ adsb_lon }}\""
+  notify: "restart dump1090"
+  become: yes

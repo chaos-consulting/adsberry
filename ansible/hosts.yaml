@@ -1,0 +1,36 @@
+all:
+  hosts:
+    adsbpi:
+      ansible_host: 192.168.178.42
+      ansible_port: 22
+      ansible_user: pi
+      ansible_password: raspberry
+
+      # ADS-B Dongle
+      # Aktiviere die adsb role
+      adsb_install: yes
+
+      # Installiere dump1090
+      adsb_install_dump1090: yes
+
+      # Koordinaten für dump1090
+      adsb_lat: "51.xxxx"
+      adsb_lon: "7.xxxx"
+
+      # USB Dongle Kennung
+      # lsusb
+      # Bus 001 Device 004: ID 0bda:2838 Realtek Semiconductor Corp. RTL2838 DVB-T
+      adsb_usb_vendorid: "0bda"
+      adsb_usb_productid: "2838"
+
+      adsb_install_udevrule: yes
+
+      adsb_feed_data_to_chaosconsulting: yes
+
+      # Zugangsdaten von chaos-consulting um die Daten an die API zu schicken
+      adsb_api_username: "<user from chaos-consulting>"
+      adsb_api_password: "<key from chaos-consulting>"
+
+      # Installiere mlat, die Konfiguration muss aber manuell durchgeführt werden.
+      # Siehe dazu hier https://github.com/chaos-consulting/adsberry/blob/master/mlat.md
+      adsb_install_mlat: yes

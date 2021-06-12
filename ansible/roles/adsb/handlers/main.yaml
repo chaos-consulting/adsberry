@@ -1,0 +1,17 @@
+- name: "Reload udev rules"
+  ansible.builtin.shell: "udevadm control --reload-rules && udevadm trigger"
+  become: yes
+  notify: "restart dump1090"
+
+- name: "restart dump1090"
+  ansible.builtin.systemd:
+    name: dump1090-mutability.service
+    state: restarted
+  become: yes
+
+- name: "restart uploadscript service"
+  ansible.builtin.systemd:
+    name: adsb.service
+    state: restarted
+    daemon_reload: yes
+  become: yes

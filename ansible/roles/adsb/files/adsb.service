@@ -1,0 +1,9 @@
+[Unit]
+Description=ADS-B Chaos Consulting Upload Script
+
+[Service]
+ExecStart=/opt/adsb/adsb.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

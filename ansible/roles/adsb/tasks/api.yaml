@@ -1,0 +1,31 @@
+- name: Create script folder /opt/adsb
+  ansible.builtin.file:
+    path: /opt/adsb
+    state: directory
+  become: yes
+
+- name: Copy upload script
+  ansible.builtin.template:
+    src: adsb.sh.j2
+    dest: /opt/adsb/adsb.sh
+    owner: root
+    group: root
+    mode: '0755'
+  become: yes
+
+- name: Copy systemd service file
+  ansible.builtin.copy:
+    src: adsb.service
+    dest: /etc/systemd/system/adsb.service
+    owner: root
+    group: root
+    mode: '0644'
+  notify: "restart uploadscript service"
+  become: yes
+
+- name: Enable uploadscript service
+  ansible.builtin.systemd:
+    name: adsb.service
+    state: started
+    enabled: yes
+  become: yes
