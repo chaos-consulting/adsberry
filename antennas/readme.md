@@ -24,7 +24,7 @@ The groundplane ist very cheap to make and is a decent performer when build to s
 * 4 M3 bolts and nuts (you may want to add washers)
 * SMA -> N RG58 cable to connect it to your bandpassfilter an rtl_sdr (length depends on your setup, the shorter the better, we usualy use 1m)
 
-### Tools needes
+### Tools needed
 * Soldering iron + solder
 * Wrench for the M3 nuts or Pliers
 * Wirecutter
