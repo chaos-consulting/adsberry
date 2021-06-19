@@ -18,7 +18,7 @@ Set the new serial wit
 ```
 rtl_eeprom -s 10000002
 ```
-Now you can access your stick lateron with the number 10000002. Beware that smaller numbers like 2 do not work.
+Now you can access your stick with the number 10000002. Beware that smaller numbers like 2 do not work.
 
 ## Software installation
 We assume you followed our instructions for an ADS-B Pi with feeding and MLAT and we'll take it from there.
@@ -28,7 +28,7 @@ We assume you followed our instructions for an ADS-B Pi with feeding and MLAT an
 ```
 cd ~
 sudo apt update && sudo apt dist-upgrade
-sudo apt install git build-essential librtlsdr-dev libusb-dev
+sudo apt install git build-essential librtlsdr-dev libusb-dev gpsd-clients
 git clone https://github.com/chaos-consulting/rtl-ais
 cd rtl-ais
 make
@@ -65,3 +65,34 @@ Level on ch 1: 40 %
 !AIVDM,2,2,0,A,888888888888880,2*24
 ```
 !AIVDM indicates, that you are getting real messages from at least one ship
+
+### Register rtl_ais as a service
+To make rtl_ais start with your Pi we register it as a systemd service like so
+```
+sudo wget -O /etc/systemd/system/rtl-ais.service https://raw.githubusercontent.com/chaos-consulting/adsberry/master/scripts/rtl-ais.service
+sudo systemctl daemon-reload
+sudo systemctl start rtl-ais.service
+sudo systemctl enable rtl-ais.service
+```
+
+### Installing the feeder
+To send the data to the online map you need to install a little script to feed the data.
+´´´
+sudo mkdir -p /opt/ais
+sudo wget -O /opt/ais/ais.sh https://raw.githubusercontent.com/chaos-consulting/adsberry/master/scripts/ais.sh
+sudo chmod +x /opt/ais/ais.sh
+´´´
+Do not forget to edit username and password in /opt/ais/ais.sh
+```
+sudo nano /opt/ais/ais.sh
+```
+### Register ais feeder as a service
+To make ais feeder start with your Pi we register it as a systemd service like so
+```
+sudo wget -O /etc/systemd/system/ais.service https://raw.githubusercontent.com/chaos-consulting/adsberry/master/scripts/ais.service
+sudo systemctl daemon-reload
+sudo systemctl start ais.service
+sudo systemctl enable ais.service
+```
+Thats it!
+
