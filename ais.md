@@ -1,0 +1,6 @@
+# AIS
+AIS  stands for Automatic Identification System and is a technology similar to ADS-B but instead for planes it is used on Ships. If you follow the steps in this Chapter of the toutorial you will be able to eceive AIS data and feed it to the big map.
+
+## Prerequisites
+* AIS reception: While ADS-B works nearly everywhere in the World AIS is a bit different. Compared to planes all ships are "on flightlevel zero" so to speak, this is the reason why the AIS travels much shorter distances. Under optimal conditions it may travel up to 100km but think more like 20km to begin with. Due to the signals nature it is vital to be near a river or near the sea where AIS equippedships are operating.
+* A Raspberry Pi is the preferred Computer for this task. It can be the same Raspberry as the ADS-B pi, in fact we run some dual or triple funtion setups on a Raspberry. Du to the limited computing power a Rasperry Pi 1B, 1B+ or Pi Zero will not work in a ADS-B + AIS szenario. For AIS only it will work. A Pi 2B, Pi 3B or Pi 3B+ will work very well. While a Pi 4B is more than you need, you can use it without a problem and it is even recommended if you think of adding more features like a Raspicam, Openwebrx, APRS or the likes on top.
