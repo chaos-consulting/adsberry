@@ -77,11 +77,11 @@ sudo systemctl enable rtl-ais.service
 
 ### Installing the feeder
 To send the data to the online map you need to install a little script to feed the data.
-´´´
+```
 sudo mkdir -p /opt/ais
 sudo wget -O /opt/ais/ais.sh https://raw.githubusercontent.com/chaos-consulting/adsberry/master/scripts/ais.sh
 sudo chmod +x /opt/ais/ais.sh
-´´´
+```
 Do not forget to edit username and password in /opt/ais/ais.sh
 ```
 sudo nano /opt/ais/ais.sh
