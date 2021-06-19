@@ -1,4 +1,8 @@
 # Use MLAT to track planes not sending their position
+MLAT is short for Multilateration. MLAT enables us to calculate the position of a plane when four or more mlat enabled stations are in reach.
+Many smaller aircrafts are not equipped to send the position data on their own, this is where MLAT jumps in.
+The MLAT client is easy to install and does not interfere with any other MLAT Client you may already have installed.
+We really appreciate you installing MLAT on your ADS-B site.
 
 ## Install the mlat-client package
 * Install the dependencies
