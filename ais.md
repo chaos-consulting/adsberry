@@ -12,6 +12,8 @@ AIS  stands for Automatic Identification System and is a technology similar to A
 ## Software installation
 We assume you followed our instructions for an ADS-B Pi with feeding and MLAT and we'll take it from there.
 
+### Compile rtl_ais (fork) from source
+
 ```
 cd ~
 sudo apt update && sudo apt dist-upgrade
@@ -21,3 +23,34 @@ cd rtl-ais
 make
 sudo make install
 ```
+### test rtl_ais
+```
+rtl_ais  -d 10000002 -L -S -p 0 -n
+```
+output shoult look something like this
+```
+Found 2 device(s):
+  0:  Realtek, RTL2838UHIDIR, SN: 10000002
+  1:  Realtek, RTL2832U, SN: 10000001
+
+Using device 0: Generic RTL2832U OEM
+Edge tuning disabled.
+DC filter enabled.
+RTL AGC disabled.
+Internal AIS decoder enabled.
+Buffer size: 163.84 mS
+Downsample factor: 64
+Low pass: 25000 Hz
+Output: 48000 Hz
+Found Rafael Micro R820T tuner
+Log NMEA sentences to console ON
+AIS data will be sent to 127.0.0.1 port 10110
+Tuner gain set to automatic.
+Tuned to 162000000 Hz.
+Sampling at 1600000 S/s.
+Allocating 12 zero-copy buffers
+Level on ch 0: 48 %
+Level on ch 1: 40 %
+!AIVDM,2,2,0,A,888888888888880,2*24
+```
+!AIVDM indicates, that you are getting real messages from at least one ship
