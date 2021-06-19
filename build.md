@@ -12,10 +12,7 @@
 * 1090MHz Bandpassfilter
 * M16 wire grommit
 * RJ45 grommit
-* 1m SMA -> N RG58 cable
-* N socket
-* 40cm copper wire
-* 4 M3 bolts and nuts
+* Antenna for 1090MHz [check or antenna Guide](antennas/readme.md)
 * Shrinktube
 * Construction adhesive
 * 24V Passive PoE power supply
@@ -63,12 +60,7 @@
 * Connect the box to the passive PoE output of your injector or switch and connect the injector to your network
 
 ## Build the antenna
-* cut 4 about 8cm long copper pieces and create a loop on each end which is big enoug for a M3 screw
-* solder the loops end for mor stability
-* cut one 8cm long copper pice and solder it into the antenna jacks middle pin
-* screw the four pieces withe the loops to the antenna at an 45° angle and bend them down 45°
-* Cut each of the 5 copper pieces to exactly 68mm
-* Connect the antenna and install it in an upright position with clear line of sight
+* [check or antenna Guide](antennas/readme.md)
 
 ## Next steps
 * [As you are done with the hardware side of the build  lets look into the software side](install.md)
