@@ -29,3 +29,11 @@ The groundplane ist very cheap to make and is a decent performer when build to s
 * Wrench for the M3 nuts or Pliers
 * Wirecutter
 * Screwdriver for the M3 screws
+
+### Building the Antenna
+* cut 4 about 8cm long copper pieces and create a loop on each end which is big enoug for a M3 screw
+* solder the loops end for mor stability
+* cut one 8cm long copper pice and solder it into the antenna jacks middle pin
+* screw the four pieces withe the loops to the antenna at an 45° angle and bend them down 45°
+* Cut each of the 5 copper pieces to exactly 68mm
+* Connect the antenna and install it in an upright position with clear line of sight
