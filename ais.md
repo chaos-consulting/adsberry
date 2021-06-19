@@ -9,6 +9,17 @@ AIS  stands for Automatic Identification System and is a technology similar to A
 * As for ADS-B a rtl_sdr dongle is needed. Look for a decent one with R820T or R820T2 Tuner with sma connector and without a bandpass filter.
 * A matching antenna needet of course. Build or buy an antenna for 162MHz. The shorter the cable from pi to antenna the better.
 
+## Hardware preperation
+You need to change the id / serial number of the rtl dongle you want to use for ais, to distinguish it reliably from the ADS-B dongle. You do not want to mix it up after a reboot, it will result in not working ADS-B and AIS
+
+Plug your AIS dongle in a pc with no other rtl_sdr dongle connected. This can be your Raspberry Pi or every other linux computer wit rtl_sdr installed.
+
+Set the new serial wit
+```
+rtl_eeprom -s 10000002
+```
+Now you can access your stick lateron with the number 10000002. Beware that smaller numbers like 2 do not work.
+
 ## Software installation
 We assume you followed our instructions for an ADS-B Pi with feeding and MLAT and we'll take it from there.
 
