@@ -1,0 +1,11 @@
+[Unit]
+Description=rtl-ais
+After=gpsd.service
+
+[Service]
+ExecStart=rtl_ais  -d 10000002 -p 0 -R -S 10
+Restart=always
+RestartSec=1s
+
+[Install]
+WantedBy=multi-user.target
