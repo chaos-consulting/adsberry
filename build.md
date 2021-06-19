@@ -54,11 +54,11 @@
 * Connect the rtl-sdr dongle via the usb extension cable to the Pi
 * Connect the bandpassfilter via the MCX adapter to the rtl-sdr dongle
 * Feed the SMA to N cable with the SMA connector from the outside into the cable grommit in the bottom of the case and connect it to the output of the bandpassfilter
-* Thighten up the grommit
+* Tighten up the grommit
 * If you like you can secure the parts inside with a bit of construction adhesive but leave enough room to access the memory card slot anytime
 
 ## Close the box
-* If you inserted your prepared memory card you can secure the boxes lid with the four screws and mount it on a plays with clear line of sight for the antenna.
+* If you inserted your prepared memory card you can secure the boxes lid with the four screws and mount it on a place with clear line of sight for the antenna.
 * You can feed data and power via a good quality RJ45 cat6e cable from up to 30m
 * Connect the box to the passive PoE output of your injector or switch and connect the injector to your network
 
