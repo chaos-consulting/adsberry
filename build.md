@@ -8,7 +8,7 @@
 * Micro USB cord
 * rtl-sdr DVB-T dongle with 820T or 820T2 Tuner. Nowerdays it is likely that you get a Fitipower tuner, that ist unfortunately not working for ADS-B
 * A Case which is Water Proof
-* MCX -> SMA adapter
+* MCX -> SMA adapter (Only if your sdr dongle is outfitted with a mcx instead of a sma connector
 * 1090MHz Bandpassfilter
 * M16 wire grommit
 * RJ45 grommit
