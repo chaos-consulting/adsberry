@@ -12,7 +12,7 @@
 * 1090MHz Bandpassfilter
 * M16 wire grommit
 * RJ45 grommit
-* Antenna for 1090MHz [check or antenna Guide](antennas/readme.md)
+* Antenna for 1090MHz [check our antenna guide](antennas/readme.md)
 * Shrinktube
 * Construction adhesive
 * 24V Passive PoE power supply
@@ -60,7 +60,7 @@
 * Connect the box to the passive PoE output of your injector or switch and connect the injector to your network
 
 ## Build the antenna
-* [check or antenna Guide](antennas/readme.md)
+* [check our antenna guide](antennas/readme.md)
 
 ## Next steps
 * [As you are done with the hardware side of the build  lets look into the software side](install.md)
