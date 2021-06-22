@@ -31,11 +31,18 @@ The groundplane ist very cheap to make and is a decent performer when build to s
 * Screwdriver for the M3 screws
 
 ### Building the Antenna
-* cut 4 about 8cm long copper pieces and create a loop on each end which is big enoug for a M3 screw [picture](gp01.jpg)
-* solder the loops end for mor stability [picture](gp02.jpg)
-* cut one 8cm long copper pice [picture](gp03.jpg) and solder it into the antenna jacks middle pin [picture](gp04.jpg)
-* screw the four pieces withe the loops to the antenna at an 45° angle [picture](gp05.jpg) and bend them down 45° [picture](gp06.jpg)
-* Cut each of the 5 copper pieces to exactly 68mm [picture](gp07.jpg)
+* cut 4 about 8cm long copper pieces and create a loop on each end which is big enoug for a M3 screw
+* <img src="gp01.jpg" width="250px">
+* solder the loops end for mor stability
+* <img src="gp02.jpg" width="250px">
+* cut one 8cm long copper pice
+* <img src="gp03.jpg" width="250px">
+* and solder it into the antenna jacks middle pin
+* <img src="gp04.jpg" width="250px">
+* screw the four pieces withe the loops to the antenna at an 45° angle
+* <img src="gp05.jpg" width="250px">
+* and bend them down 45°
+* <img src="gp06.jpg" width="250px">
 * Connect the antenna and install it in an upright position with clear line of sight
 
 ## The pcb antenna
