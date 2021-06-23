@@ -32,6 +32,7 @@ The groundplane ist very cheap to make and is a decent performer when build to s
 
 ### Building the Antenna
 cut 4 about 8cm long copper pieces and create a loop on each end which is big enoug for a M3 screw
+
 <img src="gp01.jpg" width="250px">
 
 solder the loops end for mor stability
