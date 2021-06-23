@@ -1,13 +1,13 @@
 # Antennas for ADS-B reception
-There are different Antennas on the market cheap ones as well as expensive ones. Some perform very decently while other models are not working at all.
-We like to bild our own antennas which should be:
+There are different antennas on the market. Cheap ones as well as expensive ones. Some perform very decently while other models are not working at all.
+We like to build our own antennas which should be:
 * Cheap to build
 * Easy to build
 * Small so installation is not an issue
 * Long range
 
 ## The groundplane
-The groundplane ist very cheap to make and is a decent performer when build to spec.
+The groundplane is very cheap to make and is a decent performer when build to spec.
 ### Whats good
 * Cheap (roughly 5€ without cable)
 * Easy to build
@@ -22,43 +22,43 @@ The groundplane ist very cheap to make and is a decent performer when build to s
 * N socket
 * 40cm copper wire (1.5mm² or better 2.5mm²)
 * 4 M3 bolts and nuts (you may want to add washers)
-* SMA -> N RG58 cable to connect it to your bandpassfilter an rtl_sdr (length depends on your setup, the shorter the better, we usualy use 1m)
+* SMA -> N RG58 cable to connect it to your bandpass filter and rtl_sdr (length depends on your setup, the shorter the better, we usualy use 1m)
 
 ### Tools needed
 * Soldering iron + solder
-* Wrench for the M3 nuts or Pliers
+* Wrench for the M3 nuts or pliers
 * Wirecutter
 * Screwdriver for the M3 screws
 
 ### Building the Antenna
-cut 4 about 8cm long copper pieces and create a loop on each end which is big enoug for a M3 screw
+Cut 4 about 8cm long copper pieces and create a loop on each end which is big enough for a M3 screw.
 
 <img src="gp01.jpg" width="250px">
 
-solder the loops end for mor stability
+Solder the loops end for more stability.
 
 <img src="gp02.jpg" width="250px">
 
-cut one 8cm long copper piece
+Cut one 8cm long copper piece
 
 <img src="gp03.jpg" width="250px">
 
-and solder it into the antenna jacks middle pin
+and solder it into the antenna jacks middle pin.
 
 <img src="gp04.jpg" width="250px">
 
-screw the four pieces withe the loops to the antenna at an 45° angle
+Screw the four pieces withe the loops to the antenna at an 45° angle
 
 <img src="gp05.jpg" width="250px">
 
-and bend them down 45°
+and bend them down 45°.
 
 <img src="gp06.jpg" width="250px">
 
-Connect the antenna and install it in an upright position with clear line of sight
+Connect the antenna and install it in an upright position with clear line of sight.
 
 ## The pcb antenna
-The pcb antenna is a readily available pcb you find online from China. We build an enclosure to make it waterproof and add mounting brackets
+The pcb antenna is a readily available pcb you find online from China. We build an enclosure to make it waterproof and add mounting brackets.
 
 ### Whats good
 * No soldering required
@@ -76,8 +76,8 @@ The pcb antenna is a readily available pcb you find online from China. We build 
 * 30cm of 25mm diameter plastic tube (cable installation tube works great and is cheap)
 * 13.8cm of 16mm diameter plastic tube (cable installation tube works great and is cheap)
 * 2 plastic endcaps for 25mm diameter (chair leg caps work great)
-* 2 1/2" or 22mm conduit clamps mit m8 mounting thread
-* 2 conduit claps according to your mounting pole
+* 2 1/2" or 22mm conduit clamps with m8 mounting thread
+* 2 conduit clamps according to your mounting pole
 * 2 3cm long m8 threaded rods (you can use threaded rod cut to length or m8 screws from which you cut off the head)
 * sma to sma cable as long as you need, the shorter the better (we use rg58 and crimp our connectors after feeding the cable trough the endcap)
 
@@ -88,14 +88,14 @@ The pcb antenna is a readily available pcb you find online from China. We build 
 ### Building the antenna
 * Cut your 25mm diameter tube to 30cm
 * Cut your 16mm diameter tube to 13,8cm
-* Drill a hole in the center of one endcap, choose your drillbit size big enough to feed your sma cable trough
-* Feed cable trough endcap and put cap on tube (can use some glue but not needed)
-* Pull the cable trough the 25mm diameter tube ande the 16mm tube
+* Drill a hole in the center of one endcap, choose your drillbit size big enough to feed your sma cable through
+* Feed cable through endcap and put cap on tube (can use some glue but not needed)
+* Pull the cable through the 25mm diameter tube and the 16mm tube
 * Screw the sma connector to the antenna
-* the smaller tube will sit inside the bigger tube to prevent the pcb antenna from sliding down
-* pull everything carefully into the tube until the pcb sticks out about 1-2mm
-* Put the other endcap on top no hole and no glue here, so you can access the antenna lateron for repairs
+* The smaller tube will sit inside the bigger tube to prevent the pcb antenna from sliding down
+* Pull everything carefully into the tube until the pcb sticks out about 1-2mm
+* Put the other endcap on top. No hole and no glue here, so you can access the antenna later on for repairs
 * Mount the 22mm conduit clamp on the lower end of the tube 2mm from the endcap with the cablefeed
 * Mount the second 22mm clamp a bit higher on the tube in the same direction (stay in the area where there is no pcb to avoid interference with the antenna. 5cm clamp to clamp distance is fine)
-* Connect each of the other two conduit clams with a threaded m8 rod with the clamps on the antenna
+* Connect each of the other two conduit clamps with a threaded m8 rod with the clamps on the antenna
 * Mount the thing on your mounting pole
