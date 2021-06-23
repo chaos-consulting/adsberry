@@ -38,8 +38,9 @@ cut 4 about 8cm long copper pieces and create a loop on each end which is big en
 solder the loops end for mor stability
 <img src="gp02.jpg" width="250px">
 
-cut one 8cm long copper pice
-<img src="gp03.jpg" width="250px">
+cut one 8cm long copper piece
+
+<span style="display:block;text-align:center"><img src="gp03.jpg" width="250px"></span>
 
 and solder it into the antenna jacks middle pin
 <img src="gp04.jpg" width="250px">
