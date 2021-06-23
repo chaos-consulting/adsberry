@@ -46,7 +46,7 @@ and solder it into the antenna jacks middle pin
 screw the four pieces withe the loops to the antenna at an 45° angle
 <img src="gp05.jpg" width="250px">
 
-and bend them down 45°
+and bend them down 45°  
 <img src="gp06.jpg" width="250px">
 
 Connect the antenna and install it in an upright position with clear line of sight
