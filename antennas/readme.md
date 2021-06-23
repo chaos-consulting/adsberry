@@ -36,19 +36,23 @@ cut 4 about 8cm long copper pieces and create a loop on each end which is big en
 <img src="gp01.jpg" width="250px">
 
 solder the loops end for mor stability
+
 <img src="gp02.jpg" width="250px">
 
 cut one 8cm long copper piece
 
-<span style="display:block;text-align:center"><img src="gp03.jpg" width="250px"></span>
+<img src="gp03.jpg" width="250px">
 
 and solder it into the antenna jacks middle pin
+
 <img src="gp04.jpg" width="250px">
 
 screw the four pieces withe the loops to the antenna at an 45° angle
+
 <img src="gp05.jpg" width="250px">
 
-and bend them down 45°  
+and bend them down 45°
+
 <img src="gp06.jpg" width="250px">
 
 Connect the antenna and install it in an upright position with clear line of sight
