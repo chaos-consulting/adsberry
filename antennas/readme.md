@@ -99,3 +99,4 @@ The pcb antenna is a readily available pcb you find online from China. We build 
 * Mount the second 22mm clamp a bit higher on the tube in the same direction (stay in the area where there is no pcb to avoid interference with the antenna. 5cm clamp to clamp distance is fine)
 * Connect each of the other two conduit clamps with a threaded m8 rod with the clamps on the antenna
 * Mount the thing on your mounting pole
+<img src="pcb00.jpg" width="250px"><img src="pcb01.jpg" width="250px"><img src="pcb02.jpg" width="250px"><img src="pcb03.jpg" width="250px"><img src="pcb04.jpg" width="250px"><img src="pcb05.jpg" width="250px"><img src="pcb06.jpg" width="250px">
