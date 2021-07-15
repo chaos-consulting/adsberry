@@ -23,56 +23,39 @@ Now you can access your stick with the number 10000002. Beware that smaller numb
 ## Software installation
 We assume you followed our instructions for an ADS-B Pi with feeding and MLAT and we'll take it from there.
 
-### Compile rtl_ais (fork) from source
-
+### Install AIScatcher
 ```
 cd ~
-sudo apt update && sudo apt dist-upgrade
-sudo apt install git build-essential librtlsdr-dev libusb-dev gpsd-clients
-git clone https://github.com/chaos-consulting/rtl-ais
-cd rtl-ais
-make
-sudo make install
+wget https://github.com/chaos-consulting/AIS-catcher/releases/download/0.08/ais-catcher-0.08-1_armhf.deb
+sudo dpkg -i ais-catcher-0.08-1_armhf.deb
 ```
-### test rtl_ais
-```
-rtl_ais  -d 10000002 -L -S -p 0 -n
-```
-output shoult look something like this
-```
-Found 2 device(s):
-  0:  Realtek, RTL2838UHIDIR, SN: 10000002
-  1:  Realtek, RTL2832U, SN: 10000001
 
-Using device 0: Generic RTL2832U OEM
-Edge tuning disabled.
-DC filter enabled.
-RTL AGC disabled.
-Internal AIS decoder enabled.
-Buffer size: 163.84 mS
-Downsample factor: 64
-Low pass: 25000 Hz
-Output: 48000 Hz
+### test AIScatcher
+```
+$ AIS-catcher -d 10000002
+Device selected: Realtek, RTL2838UHIDIR, SN: 10000002
 Found Rafael Micro R820T tuner
-Log NMEA sentences to console ON
-AIS data will be sent to 127.0.0.1 port 10110
-Tuner gain set to automatic.
-Tuned to 162000000 Hz.
-Sampling at 1600000 S/s.
-Allocating 12 zero-copy buffers
-Level on ch 0: 48 %
-Level on ch 1: 40 %
-!AIVDM,2,2,0,A,888888888888880,2*24
+[R82XX] PLL not locked!
+Allocating 15 zero-copy buffers
+!AIVDM,1,1,,A,339L0eU0010fOHbO76Cp;1ti0000,0*3B ( MSG: 3, REPEAT: 0, MMSI: 211222710)
+!AIVDM,1,1,,A,139fw`P001PfOjNO7:mtur4j0<1I,0*26 ( MSG: 1, REPEAT: 0, MMSI: 211533730)
+!AIVDM,1,1,,A,13=r2R000:PfKVlO6rw443Dh0<<C,0*56 ( MSG: 1, REPEAT: 0, MMSI: 215909000)
 ```
 !AIVDM indicates, that you are getting real messages from at least one ship
 
 ### Register rtl_ais as a service
-To make rtl_ais start with your Pi we register it as a systemd service like so
+To make AIS-catcher start with your Pi we register it as a systemd service like this
 ```
-sudo wget -O /etc/systemd/system/rtl-ais.service https://raw.githubusercontent.com/chaos-consulting/adsberry/master/scripts/rtl-ais.service
-sudo systemctl daemon-reload
-sudo systemctl start rtl-ais.service
-sudo systemctl enable rtl-ais.service
+sudo systemctl start ais-catcher@1000002.service
+sudo systemctl enable ais-catcher@10000002.service
+```
+
+### Install gpsd
+GPSd will convert the AIVDM messages into human readable messages.
+```
+sudo apt install gpsd
+sudo systemctl start gpsd
+sudo systemctl enable gpsd
 ```
 
 ### Installing the feeder
