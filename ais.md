@@ -53,7 +53,7 @@ sudo systemctl enable ais-catcher@10000002.service
 ### Install gpsd
 GPSd will convert the AIVDM messages into human readable messages.
 ```
-sudo apt install gpsd
+sudo apt install gpsd gpsd-clients
 sudo systemctl start gpsd
 sudo systemctl enable gpsd
 ```
