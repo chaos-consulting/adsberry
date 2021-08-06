@@ -26,8 +26,8 @@ We assume you followed our instructions for an ADS-B Pi with feeding and MLAT an
 ### Install AIScatcher
 ```
 cd ~
-wget https://github.com/chaos-consulting/AIS-catcher/releases/download/0.08/ais-catcher-0.08-1_armhf.deb
-sudo dpkg -i ais-catcher-0.08-1_armhf.deb
+wget https://github.com/chaos-consulting/AIS-catcher/releases/download/v0.17/ais-catcher-0.17-1_armhf.deb
+sudo dpkg -i ais-catcher-0.17-1_armhf.deb
 ```
 
 ### test AIScatcher
@@ -56,6 +56,11 @@ GPSd will convert the AIVDM messages into human readable messages.
 sudo apt install gpsd gpsd-clients
 sudo systemctl start gpsd
 sudo systemctl enable gpsd
+```
+
+Edit the gpsd config in /etc/default/gpsd:
+```
+GSD_OPTIONS="udp://127.0.0.1:10110"
 ```
 
 ### Installing the feeder
