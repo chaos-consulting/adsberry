@@ -46,7 +46,7 @@ Allocating 15 zero-copy buffers
 ### Register rtl_ais as a service
 To make AIS-catcher start with your Pi we register it as a systemd service like this
 ```
-sudo systemctl start ais-catcher@1000002.service
+sudo systemctl start ais-catcher@10000002.service
 sudo systemctl enable ais-catcher@10000002.service
 ```
 
