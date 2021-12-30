@@ -6,13 +6,13 @@ We really appreciate you installing MLAT on your ADS-B site.
 
 ## Install the mlat-client package
 * Install the dependencies
-* You need to optain and install the latest deb Package from [here](https://github.com/chaos-consulting/mlat-client) like shown below
+* You need to optain and install the latest deb Package from [here](https://github.com/chaos-consulting/mlat-client) like shown below (keep an eye on your Raspbian release!)
 * Alternatively you build it on your own and install stunnel4 and configure everything
 
 ```
 sudo apt install stunnel4
-wget https://github.com/chaos-consulting/mlat-client/releases/download/v0.3.2-2/mlat-client-c2is_0.3.2-2_armhf.deb
-sudo dpkg -i mlat-client-c2is_0.3.2-2_armhf.deb
+wget https://github.com/chaos-consulting/mlat-client/releases/download/v0.3.2-2/mlat-client-c2is.bullseye_0.3.2-2_armhf.deb
+sudo dpkg -i mlat-client-c2is.bullseye_0.3.2-2_armhf.deb
 ```
 
 ## Configure the mlat-client package
