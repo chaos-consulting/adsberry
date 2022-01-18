@@ -60,7 +60,7 @@ sudo systemctl enable gpsd
 
 Edit the gpsd config in /etc/default/gpsd:
 ```
-GSD_OPTIONS="udp://127.0.0.1:10110"
+GPSD_OPTIONS="udp://127.0.0.1:10110"
 ```
 
 ### Installing the feeder
@@ -83,4 +83,3 @@ sudo systemctl start ais.service
 sudo systemctl enable ais.service
 ```
 Thats it!
-
