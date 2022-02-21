@@ -23,11 +23,18 @@ Now you can access your stick with the number 10000002. Beware that smaller numb
 ## Software installation
 We assume you followed our instructions for an ADS-B Pi with feeding and MLAT and we'll take it from there.
 
-### Install AIScatcher
+### Install AIScatcher (bullseye)
 ```
 cd ~
-wget https://github.com/chaos-consulting/AIS-catcher/releases/download/v0.17/ais-catcher-0.17-1_armhf.deb
-sudo dpkg -i ais-catcher-0.17-1_armhf.deb
+wget https://github.com/chaos-consulting/AIS-catcher/releases/download/v0.35/ais-catcher-0.35-1-bullseye_armhf.deb
+sudo dpkg -i ais-catcher-0.35-1-bullseye_armhf.deb
+```
+
+### Install AIScatcher (buster)
+```
+cd ~
+wget https://github.com/chaos-consulting/AIS-catcher/releases/download/v0.35/ais-catcher-0.35-1-buster_armhf.deb
+sudo dpkg -i ais-catcher-0.35-1-buster_armhf.deb
 ```
 
 ### test AIScatcher
