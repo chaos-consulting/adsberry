@@ -4,4 +4,4 @@ If you want to read more on how to build it check our wiki
 
 https://github.com/chaos-consulting/adsberry/wiki
 
-<img src="https://github.com/chaos-consulting/adsberry/raw/master/adsb_finallx.png" width="500px">
+![](https://github.com/chaos-consulting/adsberry/raw/master/adsb_finallx.png)
