@@ -6,8 +6,8 @@ username='yourusernamehere';
 password='yourpasswordhere';
 
 #You can change the path to the aircraft.json here which is not needed if you followed our tutorial. If you are using an already existing setup you may need to alter this.
-path='/run/dump1090-mutability/aircraft.json'; #dump1090-mutability
-#path='/run/dump1090-fa/aircraft.json'; #dump1090-fa (Flightaware)
+#path='/run/dump1090-mutability/aircraft.json'; #dump1090-mutability
+path='/run/dump1090-fa/aircraft.json'; #dump1090-fa (Flightaware)
 
 #No changes needed from here on
 while true; do
