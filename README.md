@@ -1,4 +1,8 @@
 <p align="center">
+  <b>This repo is no longer maintained check out our new repo <a href="https://github.com/sdrmap/docs">https://github.com/sdrmap/docs</a></b>
+</p>
+<hr></hr>
+<p align="center">
   <a href="https://adsb.chaos-consulting.de/" target="_blank">
     <img style="width: 50%" src="https://github.com/chaos-consulting/adsberry/raw/master/adsb_finallx.png" alt="https://adsb.chaos-consulting.de/"><br/>
   </a>
